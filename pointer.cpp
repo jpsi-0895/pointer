@@ -11,12 +11,22 @@ int main(int argc, char const *argv[])
     int *ptr = &var;
 
     char *buffer = new char[8];
+    int *hello = new int[10];
+    hello[9] = 8;
+    hello[8] = 8;
+    hello[7] = 8;
+    hello[6] = 8;
+    hello[5] = 8;
+    hello[0] = 9;
     log(var);
+
+    int hi[] = {1,2,3,4,5,6,7};
+    float hfloat[] = {1,2,3,4,5,6,7};
 
     // doble pointer?
 
-    char** dptr = &buffer;
+    char **dptr = &buffer;
 
-    delete[] buffer;  // delete heap array value
+    // delete[] buffer;  // delete heap array value
     return 0;
 }
